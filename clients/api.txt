@@ -1,0 +1,6 @@
+==> c'est quoi une api
+===> une api rest 
+===> une api web 
+===> une point de terminaison (endpoint)
+===> c'est quoi le json 
+===> status d'un api 
