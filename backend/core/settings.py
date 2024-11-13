@@ -55,6 +55,14 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [ 
         'rest_framework.permissions.IsAuthenticatedOrReadOnly', 
     ], 
+    'DEFAULT_THROTTLE_CLASSES':[
+        'rest_framework.throttling.UserRateThrottle', # user connected 
+        'rest_framework.throttling.AnonRateThrottle',
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'user': '2/day',  # Allows 100 requests per day per user
+        'anon': '2/hour',  # Allows 10 requests per hour for anonymous users
+    }
 }
 
 
