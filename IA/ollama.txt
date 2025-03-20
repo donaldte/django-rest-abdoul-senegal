@@ -1,0 +1,7 @@
+LLM(large language Models)
+
+ollama list 
+ollama run 
+ollama help
+ollama pull 
+ollama create
